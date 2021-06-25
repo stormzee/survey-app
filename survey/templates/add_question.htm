@@ -1,0 +1,15 @@
+{% extends 'base.htm' %}
+
+{% block content %}
+
+<form action="" method="POST">
+{% csrf_token %}
+<label for="question_text">Question</label>
+<input type="text" name="question" id="question_text">
+<input type="submit" value="Submit">
+
+</form>
+
+
+
+{% endblock %}

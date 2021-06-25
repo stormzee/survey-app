@@ -1,0 +1,12 @@
+{% extends 'base.htm' %}
+
+{% block content %}
+<p>Add Choices below</p>
+<form action="" method="POST">
+    {% csrf_token %}
+    <label for="choice_text">Choice</label>
+    <input type="text" name="choice" id="choice_text">
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.htm' %}
+{% block content %}
+
+ {% for ans in question_ans  %}
+ 
+    {{ans.answer}}
+
+ {% endfor %}
+
+ {% for q in question %}
+    {{q}}
+ {% endfor %}
+   
+{% endblock content %}
